@@ -188,6 +188,19 @@
     padding-left: 65px;
   }
 
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid gray;
+  }
+
+  .horizontal-line {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   /* section div img.img-responsive {
     min-width:  -webkit-fill-available;
     min-height:  -webkit-fill-available;
@@ -223,18 +236,76 @@
     justify-content: center;
     align-items: center;
   }
-  
+
+  section .content {
+    max-width: 90%;
+    margin-top: 35px;
+  }
+
   section .content h1 {
     font-size: 2.5rem;
   }
   section .content h2 {
     font-size: 2rem;
   }
+  
   section div img.img-responsive {
     max-width: 100%;
     height: auto;
   }
 }
+/* for samsung devices. */
+@media only screen and (min-device-width: 240px) {
+  body {
+    overflow-x: hidden;
+  }
+  .burger {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    background: black;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    font-family: "Francois One", sans-serif;
+  }
+  section {
+    position: relative;
+    min-height: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section .content {
+    max-width: 90%;
+    margin-top: 35px;
+  }
+  
+  section .content h1 {
+    font-size: 1.5rem;
+  }
+  section .content h2 {
+    font-size: 1.25rem;
+  }
+
+  section div img.img-responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
 .nav-active {
   transform: translateX(0%);
 }
