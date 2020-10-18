@@ -243,19 +243,22 @@
   }
 
   section .content h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   section .content h2 {
-    font-size: 2rem;
+    font-size: 1.25rem;
   }
   
   section div img.img-responsive {
     max-width: 100%;
     height: auto;
   }
+  p {
+    font-size: 1rem;
+  }
 }
 /* for samsung devices. */
-@media only screen and (min-device-width: 240px) {
+@media only screen and (max-device-width: 370px) {
   body {
     overflow-x: hidden;
   }
